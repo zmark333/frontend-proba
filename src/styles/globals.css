@@ -1,81 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
   --font-size: 16px;
-  --background: #ffffff;
-  --foreground: oklch(0.145 0 0);
-  --card: #ffffff;
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: #030213;
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.95 0.0058 264.53);
-  --secondary-foreground: #030213;
-  --muted: #ececf0;
-  --muted-foreground: #717182;
-  --accent: #e9ebef;
-  --accent-foreground: #030213;
-  --destructive: #d4183d;
+  
+  /* Mecenas Modern Color Palette */
+  --midnight: #4A4B5E;
+  --pearl: #FEFCF7;
+  --rich-gold: #DFC28A;
+  --sage: #9AA491;
+  
+  --background: #48484d;
+  --foreground: var(--pearl);
+  --card: var(--pearl);
+  --card-foreground: var(--midnight);
+  --popover: var(--pearl);
+  --popover-foreground: var(--midnight);
+  --primary: var(--rich-gold);
+  --primary-foreground: var(--midnight);
+  --secondary: var(--sage);
+  --secondary-foreground: var(--pearl);
+  --muted: #F5F2EB;
+  --muted-foreground: #ABA6A0;
+  --accent: var(--rich-gold);
+  --accent-foreground: var(--midnight);
+  --destructive: #E85B75;
   --destructive-foreground: #ffffff;
-  --border: rgba(0, 0, 0, 0.1);
+  --border: rgba(74, 75, 94, 0.2);
   --input: transparent;
-  --input-background: #f3f3f5;
-  --switch-background: #cbced4;
+  --input-background: #F8F5EF;
+  --switch-background: #E0DCD5;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #030213;
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --ring: var(--rich-gold);
+  --chart-1: var(--rich-gold);
+  --chart-2: var(--sage);
+  --chart-3: var(--midnight);
+  --chart-4: #B89B6B;
+  --chart-5: #ACB0A4;
+  --radius: 0.5rem;
+  --sidebar: var(--pearl);
+  --sidebar-foreground: var(--midnight);
+  --sidebar-primary: var(--rich-gold);
+  --sidebar-primary-foreground: var(--midnight);
+  --sidebar-accent: var(--sage);
+  --sidebar-accent-foreground: var(--pearl);
+  --sidebar-border: rgba(74, 75, 94, 0.2);
+  --sidebar-ring: var(--rich-gold);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
+  --background: #48484d;
+  --foreground: #FEFCF7;
+  --card: #5A5A5F;
+  --card-foreground: #FEFCF7;
+  --popover: #5A5A5F;
+  --popover-foreground: #FEFCF7;
+  --primary: #DFC28A;
+  --primary-foreground: #2A2A2E;
+  --secondary: #9AA491;
+  --secondary-foreground: #FEFCF7;
+  --muted: #606065;
+  --muted-foreground: #C0C0C5;
+  --accent: #DFC28A;
+  --accent-foreground: #2A2A2E;
+  --destructive: #E85B75;
+  --destructive-foreground: #FEFCF7;
+  --border: #606065;
+  --input: #606065;
+  --ring: #DFC28A;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --chart-1: #DFC28A;
+  --chart-2: #9AA491;
+  --chart-3: #E85B75;
+  --chart-4: #B89B6B;
+  --chart-5: #ACB0A4;
+  --sidebar: #5A5A5F;
+  --sidebar-foreground: #FEFCF7;
+  --sidebar-primary: #DFC28A;
+  --sidebar-primary-foreground: #2A2A2E;
+  --sidebar-accent: #9AA491;
+  --sidebar-accent-foreground: #FEFCF7;
+  --sidebar-border: #606065;
+  --sidebar-ring: #DFC28A;
 }
 
 @theme inline {
@@ -117,6 +126,12 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Mecenas Custom Colors */
+  --color-midnight: var(--midnight);
+  --color-pearl: var(--pearl);
+  --color-rich-gold: var(--rich-gold);
+  --color-sage: var(--sage);
 }
 
 @layer base {
@@ -133,52 +148,67 @@
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
 @layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
-      font-size: var(--text-2xl);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
     }
 
     h2 {
-      font-size: var(--text-xl);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
     }
 
     h3 {
-      font-size: var(--text-lg);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: -0.015em;
     }
 
     h4 {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.4;
     }
 
     p {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-normal);
-      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.6;
     }
 
     label {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
       line-height: 1.5;
     }
 
     button {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
       line-height: 1.5;
     }
 
     input {
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-normal);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 400;
       line-height: 1.5;
     }
   }

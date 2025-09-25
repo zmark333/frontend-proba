@@ -129,7 +129,7 @@ export function Market() {
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl mb-6 text-[#8B4A4A]">Auction Market</h1>
+          <h1 className="text-4xl md:text-5xl mb-6 text-[#DFC28A] font-normal">Auction Market</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Browse all active patronage auctions and find the perfect artist to support
           </p>
@@ -230,7 +230,7 @@ export function Market() {
                 <div className="bg-muted/50 p-2 rounded">
                   <div className="flex justify-between items-center">
                     <span className="text-xs text-muted-foreground">Current Bid</span>
-                    <span className="text-sm text-[#8B4A4A]">{artist.currentBid}</span>
+                    <span className="text-sm text-[rgba(192,192,197,1)]">{artist.currentBid}</span>
                   </div>
                 </div>
               </CardContent>

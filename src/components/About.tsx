@@ -11,7 +11,7 @@ export function About() {
       <div className="container mx-auto max-w-4xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl mb-6 text-[#8B4A4A]">
+          <h1 className="text-4xl md:text-5xl mb-6 text-primary">
             About Mecenas
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
@@ -23,8 +23,8 @@ export function About() {
         {/* Caius Maecenas Section */}
         <Card className="mb-12 border-0 shadow-lg">
           <CardHeader className="pb-6">
-            <CardTitle className="text-2xl text-[#8B4A4A] flex items-center gap-3">
-              <div className="w-2 h-8 bg-[#8B4A4A] rounded"></div>
+            <CardTitle className="text-2xl text-primary flex items-center gap-3">
+              <div className="w-2 h-8 bg-primary rounded"></div>
               Caius Maecenas (70-8 BC)
             </CardTitle>
           </CardHeader>
@@ -48,8 +48,8 @@ export function About() {
               term "mecenas" still represents the highest form
               of artistic support across many cultures today.
             </p>
-            <div className="bg-[#8B4A4A]/10 p-6 rounded-lg">
-              <p className="italic text-[#8B4A4A]">
+            <div className="bg-primary/10 p-6 rounded-lg">
+              <p className="italic text-primary">
                 "Without Maecenas, we might never have had
                 Virgil's Aeneid or Horace's Odes—works that have
                 shaped Western literature for over two
@@ -62,8 +62,8 @@ export function About() {
         {/* Historical Tradition Section */}
         <Card className="mb-12 border-0 shadow-lg">
           <CardHeader className="pb-6">
-            <CardTitle className="text-2xl text-[#8B4A4A] flex items-center gap-3">
-              <div className="w-2 h-8 bg-[#8B4A4A] rounded"></div>
+            <CardTitle className="text-2xl text-primary flex items-center gap-3">
+              <div className="w-2 h-8 bg-primary rounded"></div>
               The Tradition of Patronage
             </CardTitle>
           </CardHeader>
@@ -89,10 +89,10 @@ export function About() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <div className="text-center p-4">
-                <div className="text-3xl text-[#8B4A4A] mb-2">
+                <div className="text-3xl text-primary mb-2">
                   🏛️
                 </div>
-                <h4 className="text-lg mb-2 text-[#8B4A4A]">
+                <h4 className="text-lg mb-2 text-primary">
                   Ancient Rome
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -100,10 +100,10 @@ export function About() {
                 </p>
               </div>
               <div className="text-center p-4">
-                <div className="text-3xl text-[#8B4A4A] mb-2">
+                <div className="text-3xl text-primary mb-2">
                   🎨
                 </div>
-                <h4 className="text-lg mb-2 text-[#8B4A4A]">
+                <h4 className="text-lg mb-2 text-primary">
                   Renaissance
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -111,10 +111,10 @@ export function About() {
                 </p>
               </div>
               <div className="text-center p-4">
-                <div className="text-3xl text-[#8B4A4A] mb-2">
+                <div className="text-3xl text-primary mb-2">
                   🎼
                 </div>
-                <h4 className="text-lg mb-2 text-[#8B4A4A]">
+                <h4 className="text-lg mb-2 text-primary">
                   Classical Era
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -128,8 +128,8 @@ export function About() {
         {/* Modern Platform Section */}
         <Card className="border-0 shadow-lg">
           <CardHeader className="pb-6">
-            <CardTitle className="text-2xl text-[#8B4A4A] flex items-center gap-3">
-              <div className="w-2 h-8 bg-[#8B4A4A] rounded"></div>
+            <CardTitle className="text-2xl text-primary flex items-center gap-3">
+              <div className="w-2 h-8 bg-primary rounded"></div>
               Mecenas Platform: Patronage Reimagined
             </CardTitle>
           </CardHeader>
@@ -151,13 +151,13 @@ export function About() {
               flourish.
             </p>
 
-            <div className="bg-gradient-to-r from-[#8B4A4A]/10 to-[#8B4A4A]/5 p-8 rounded-lg">
-              <h4 className="text-xl text-[#8B4A4A] mb-4">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-8 rounded-lg">
+              <h4 className="text-xl text-primary mb-4">
                 How It Works
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h5 className="text-lg text-[#8B4A4A] mb-2">
+                  <h5 className="text-lg text-primary mb-2">
                     1. Discover Artists
                   </h5>
                   <p className="text-muted-foreground">
@@ -166,7 +166,7 @@ export function About() {
                   </p>
                 </div>
                 <div>
-                  <h5 className="text-lg text-[#8B4A4A] mb-2">
+                  <h5 className="text-lg text-primary mb-2">
                     2. Bid for Patronage
                   </h5>
                   <p className="text-muted-foreground">
@@ -175,7 +175,7 @@ export function About() {
                   </p>
                 </div>
                 <div>
-                  <h5 className="text-lg text-[#8B4A4A] mb-2">
+                  <h5 className="text-lg text-primary mb-2">
                     3. Receive Exclusive Benefits
                   </h5>
                   <p className="text-muted-foreground">
@@ -184,7 +184,7 @@ export function About() {
                   </p>
                 </div>
                 <div>
-                  <h5 className="text-lg text-[#8B4A4A] mb-2">
+                  <h5 className="text-lg text-primary mb-2">
                     4. Support Artistic Growth
                   </h5>
                   <p className="text-muted-foreground">

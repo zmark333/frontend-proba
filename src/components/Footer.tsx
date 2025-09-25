@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import logo from 'figma:asset/03949e436fa14f5c4a5ad27f5e63a5631c2d8118.png';
+import mecenasLogo from 'figma:asset/31e33c7c6c27ba89012c0dc68e21342aafde1062.png';
 
 export function Footer() {
   return (
@@ -10,9 +10,13 @@ export function Footer() {
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src={logo} alt="Mecenas Logo" className="h-8 w-8" />
+              <img 
+                src={mecenasLogo} 
+                alt="Mecenas Logo" 
+                className="w-8 h-8"
+              />
               <div className="flex flex-col">
-                <span className="font-semibold text-[#8B4A4A]">MECENAS</span>
+                <span className="font-semibold text-primary">MECENAS</span>
                 <span className="text-xs text-muted-foreground">Patronage, modernized.</span>
               </div>
             </div>
@@ -23,18 +27,18 @@ export function Footer() {
 
           {/* Marketplace */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-[#8B4A4A]">Marketplace</h3>
+            <h3 className="font-semibold text-primary">Marketplace</h3>
             <div className="space-y-2 flex flex-col">
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Browse Art
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Featured Collections
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 New Releases
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Trending
               </Button>
             </div>
@@ -42,18 +46,18 @@ export function Footer() {
 
           {/* Community */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-[#8B4A4A]">Community</h3>
+            <h3 className="font-semibold text-primary">Community</h3>
             <div className="space-y-2 flex flex-col">
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Artists
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Collectors
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Patrons
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Events
               </Button>
             </div>
@@ -61,18 +65,18 @@ export function Footer() {
 
           {/* Support */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-[#8B4A4A]">Support</h3>
+            <h3 className="font-semibold text-primary">Support</h3>
             <div className="space-y-2 flex flex-col">
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Help Center
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Terms of Service
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Privacy Policy
               </Button>
-              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A] block w-full justify-start">
+              <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary block w-full justify-start">
                 Contact Us
               </Button>
             </div>
@@ -86,13 +90,13 @@ export function Footer() {
             © 2025 Mecenas. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A]">
+            <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary">
               Discord
             </Button>
-            <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A]">
+            <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary">
               Twitter
             </Button>
-            <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-[#8B4A4A]">
+            <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary">
               Instagram
             </Button>
           </div>

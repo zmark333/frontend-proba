@@ -1,6 +1,5 @@
 import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { PopularItems } from "./components/PopularItems";
+import { KeyholePortal } from "./components/KeyholePortal";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About";
 import { Market } from "./components/Market";
@@ -33,23 +32,18 @@ export default function App() {
         return <Register onNavigate={handleNavigate} />;
       case "home":
       default:
-        return (
-          <>
-            <Hero />
-            <PopularItems />
-          </>
-        );
+        return <KeyholePortal />;
     }
   };
 
   const shouldShowFooter = !["login", "register"].includes(currentPage);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background dark">
       {!["login", "register"].includes(currentPage) && (
         <Header currentPage={currentPage} onNavigate={handleNavigate} />
       )}
-      <main className="flex-1">
+      <main className={`flex-1 ${!["login", "register"].includes(currentPage) ? "pt-20" : ""}`}>
         {renderPage()}
       </main>
       {shouldShowFooter && <Footer />}

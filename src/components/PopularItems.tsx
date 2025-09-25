@@ -67,10 +67,10 @@ export function PopularItems() {
   };
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl mb-6 text-[#8B4A4A]">Current Auctions</h2>
+          <h2 className="text-3xl md:text-4xl mb-6 text-primary">Featured Artists</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Bid to become the exclusive mecenas of these exceptional artists. 
             Each auction grants you the honor of supporting and guiding their artistic journey.
@@ -81,7 +81,7 @@ export function PopularItems() {
           {featuredArtists.map((artist) => (
             <Card 
               key={artist.id} 
-              className="overflow-hidden hover:shadow-xl transition-all duration-300 group border-0 shadow-lg cursor-pointer"
+              className="overflow-hidden hover:shadow-xl transition-all duration-300 group border border-border shadow-lg cursor-pointer bg-card"
               onClick={() => handleArtistClick(artist)}
             >
               <div className="relative overflow-hidden">
@@ -90,27 +90,27 @@ export function PopularItems() {
                   alt={artist.name}
                   className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <Badge className="absolute top-4 left-4 bg-[#8B4A4A] hover:bg-[#8B4A4A]/80 text-white">
+                <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground">
                   {artist.category}
                 </Badge>
                 {artist.status === "ending_soon" && (
-                  <Badge className="absolute top-4 right-4 bg-red-600 hover:bg-red-600/80 text-white animate-pulse">
+                  <Badge className="absolute top-4 right-4 bg-destructive text-destructive-foreground animate-pulse">
                     Ending Soon
                   </Badge>
                 )}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
-                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#8B4A4A] px-4 py-2 rounded-lg">
+                  <span className="text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary px-4 py-2 rounded-lg">
                     View Benefits
                   </span>
                 </div>
               </div>
               
-              <CardHeader className="pb-3">
-                <CardTitle className="text-xl">{artist.name}</CardTitle>
-                <CardDescription className="text-base">{artist.title}</CardDescription>
+              <CardHeader className="pb-3 bg-card">
+                <CardTitle className="text-xl text-card-foreground">{artist.name}</CardTitle>
+                <CardDescription className="text-base text-muted-foreground">{artist.title}</CardDescription>
               </CardHeader>
 
-              <CardContent className="pb-4">
+              <CardContent className="pb-4 bg-card">
                 <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
                   <span className="flex items-center gap-2">
                     <Gavel className="h-4 w-4" />
@@ -122,17 +122,17 @@ export function PopularItems() {
                   </span>
                 </div>
                 
-                <div className="bg-muted/50 p-3 rounded-lg">
+                <div className="bg-accent/20 p-3 rounded-lg border border-accent/30">
                   <div className="flex justify-between items-center">
                     <span className="text-sm text-muted-foreground">Current Bid</span>
-                    <span className="text-lg text-[#8B4A4A]">{artist.currentBid}</span>
+                    <span className="text-lg text-primary font-semibold">{artist.currentBid}</span>
                   </div>
                 </div>
               </CardContent>
 
-              <CardFooter className="pt-0">
+              <CardFooter className="pt-0 bg-card">
                 <Button 
-                  className="w-full bg-[#8B4A4A] hover:bg-[#8B4A4A]/90 text-lg py-6"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg py-6"
                   size="lg"
                   onClick={(e) => {
                     e.stopPropagation();
@@ -150,7 +150,7 @@ export function PopularItems() {
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-[#8B4A4A] text-[#8B4A4A] hover:bg-[#8B4A4A] hover:text-white px-10 py-6 text-lg"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 text-lg"
           >
             View All Auctions
           </Button>

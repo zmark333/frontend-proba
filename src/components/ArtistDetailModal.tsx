@@ -51,31 +51,31 @@ const getBenefits = (category: string) => {
       return [
         {
           icon: <Music className="h-5 w-5" />,
-          title: "Birthday Performance",
-          description: "Private acoustic performance at your birthday celebration"
+          title: "Private Concerts",
+          description: "Annual private concert performance at your location"
         },
         {
           icon: <Star className="h-5 w-5" />,
-          title: "Lifetime Concert Access",
-          description: "Free VIP tickets to all concerts and performances"
+          title: "Early Access",
+          description: "Exclusive first listen to new compositions and albums"
         },
         {
           icon: <Gift className="h-5 w-5" />,
-          title: "Exclusive Recordings",
-          description: "Private recordings and early access to new compositions"
+          title: "Recording Sessions",
+          description: "VIP access to recording sessions and behind-the-scenes content"
         },
         {
           icon: <Calendar className="h-5 w-5" />,
-          title: "Music Lessons",
-          description: "Monthly private music lessons or masterclasses"
+          title: "Concert Priority",
+          description: "Priority seating at all public concerts and events"
         }
       ];
     case "Writer":
       return [
         {
           icon: <PenTool className="h-5 w-5" />,
-          title: "Dedicated Writings",
-          description: "Annual personalized short story or poem written for you"
+          title: "Dedicated Stories",
+          description: "Annual short story or poem written specifically for you"
         },
         {
           icon: <Star className="h-5 w-5" />,
@@ -130,7 +130,7 @@ export function ArtistDetailModal({ artist, isOpen, onClose }: ArtistDetailModal
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl text-[#8B4A4A]">Mecenas Benefits</DialogTitle>
+          <DialogTitle className="text-2xl text-primary">Mecenas Benefits</DialogTitle>
         </DialogHeader>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -142,11 +142,11 @@ export function ArtistDetailModal({ artist, isOpen, onClose }: ArtistDetailModal
                 alt={artist.name}
                 className="w-full h-64 object-cover"
               />
-              <Badge className="absolute top-4 left-4 bg-[#8B4A4A] text-white">
+              <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground">
                 {artist.category}
               </Badge>
               {artist.status === "ending_soon" && (
-                <Badge className="absolute top-4 right-4 bg-red-600 text-white animate-pulse">
+                <Badge className="absolute top-4 right-4 bg-destructive text-destructive-foreground animate-pulse">
                   Ending Soon
                 </Badge>
               )}
@@ -154,7 +154,7 @@ export function ArtistDetailModal({ artist, isOpen, onClose }: ArtistDetailModal
             
             <div className="space-y-4">
               <div>
-                <h3 className="text-2xl text-[#8B4A4A] mb-2">{artist.name}</h3>
+                <h3 className="text-2xl text-primary mb-2">{artist.name}</h3>
                 <p className="text-lg text-muted-foreground">{artist.title}</p>
               </div>
               
@@ -171,10 +171,10 @@ export function ArtistDetailModal({ artist, isOpen, onClose }: ArtistDetailModal
                 </div>
               </div>
               
-              <div className="p-4 bg-[#8B4A4A]/10 rounded-lg">
+              <div className="p-4 bg-primary/10 rounded-lg">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Current Bid</span>
-                  <span className="text-2xl text-[#8B4A4A]">{artist.currentBid}</span>
+                  <span className="text-2xl text-primary">{artist.currentBid}</span>
                 </div>
               </div>
             </div>
@@ -183,17 +183,17 @@ export function ArtistDetailModal({ artist, isOpen, onClose }: ArtistDetailModal
           {/* Benefits */}
           <div className="space-y-6">
             <div>
-              <h4 className="text-xl text-[#8B4A4A] mb-4">As This Artist's Mecenas, You'll Receive:</h4>
+              <h4 className="text-xl text-primary mb-4">As This Artist's Mecenas, You'll Receive:</h4>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
-                  <Card key={index} className="border-l-4 border-l-[#8B4A4A] shadow-sm">
+                  <Card key={index} className="border-l-4 border-l-primary shadow-sm">
                     <CardContent className="p-4">
                       <div className="flex items-start gap-3">
-                        <div className="text-[#8B4A4A] mt-1">
+                        <div className="text-primary mt-1">
                           {benefit.icon}
                         </div>
                         <div>
-                          <h5 className="font-semibold text-[#8B4A4A] mb-1">{benefit.title}</h5>
+                          <h5 className="font-semibold text-primary mb-1">{benefit.title}</h5>
                           <p className="text-sm text-muted-foreground">{benefit.description}</p>
                         </div>
                       </div>
@@ -203,8 +203,8 @@ export function ArtistDetailModal({ artist, isOpen, onClose }: ArtistDetailModal
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-[#8B4A4A]/10 to-[#8B4A4A]/5 p-6 rounded-lg">
-              <h5 className="text-lg text-[#8B4A4A] mb-2">Exclusive Patronage</h5>
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-6 rounded-lg">
+              <h5 className="text-lg text-primary mb-2">Exclusive Patronage</h5>
               <p className="text-sm text-muted-foreground mb-4">
                 As the winning mecenas, you'll become this artist's exclusive patron for one year, 
                 receiving all the benefits above plus a special recognition in their upcoming works.
@@ -218,14 +218,14 @@ export function ArtistDetailModal({ artist, isOpen, onClose }: ArtistDetailModal
 
         <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t">
           <Button 
-            className="flex-1 bg-[#8B4A4A] hover:bg-[#8B4A4A]/90 text-lg py-6"
+            className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground text-lg py-6"
             size="lg"
           >
             Place Bid
           </Button>
           <Button 
             variant="outline" 
-            className="flex-1 border-[#8B4A4A] text-[#8B4A4A] hover:bg-[#8B4A4A] hover:text-white text-lg py-6"
+            className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg py-6"
             size="lg"
           >
             Watch Auction

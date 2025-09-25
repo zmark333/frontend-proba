@@ -262,7 +262,7 @@ export function Wallet() {
         <QRCodeDialog token={token} />
         <Button 
           variant="outline" 
-          className="flex items-center gap-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+          className="flex items-center gap-2 border-blue-600 text-[rgba(139,157,195,1)] hover:bg-blue-600 hover:text-white"
         >
           <ShoppingCart className="h-4 w-4" />
           Sell
@@ -276,7 +276,7 @@ export function Wallet() {
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl mb-6 text-[#8B4A4A]">My Wallet</h1>
+          <h1 className="text-4xl md:text-5xl mb-6 text-[rgba(223,194,138,1)]">My Wallet</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Manage your patronage tokens and track your exclusive benefits
           </p>

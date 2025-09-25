@@ -172,7 +172,7 @@ export function Explore() {
           </Badge>
         )}
         {item.type === "resale" && (
-          <Badge className="absolute top-3 right-3 bg-blue-600 text-white text-xs">
+          <Badge className="absolute top-3 right-3 bg-[#8B9DC3] text-white text-xs">
             <ShoppingCart className="h-3 w-3 mr-1" />
             Resale
           </Badge>
@@ -208,7 +208,7 @@ export function Explore() {
             <div className="bg-muted/50 p-2 rounded">
               <div className="flex justify-between items-center">
                 <span className="text-xs text-muted-foreground">Current Bid</span>
-                <span className="text-sm text-[#8B4A4A]">{item.currentBid}</span>
+                <span className="text-sm text-[rgba(192,192,197,1)]">{item.currentBid}</span>
               </div>
             </div>
           </>
@@ -223,7 +223,7 @@ export function Explore() {
               </span>
               <span>{item.totalBids} bids</span>
             </div>
-            <div className="bg-green-50 p-2 rounded">
+            <div className="bg-[rgba(240,253,244,0)] p-2 rounded">
               <div className="flex justify-between items-center">
                 <span className="text-xs text-muted-foreground">Final Price</span>
                 <span className="text-sm text-green-600">{item.finalBid}</span>
@@ -241,10 +241,10 @@ export function Explore() {
               <span>{item.timeRemaining} remaining</span>
               <span>Original: {item.originalPrice}</span>
             </div>
-            <div className="bg-blue-50 p-2 rounded">
+            <div className="bg-[rgba(239,246,255,0)] p-2 rounded">
               <div className="flex justify-between items-center">
                 <span className="text-xs text-muted-foreground">Resale Price</span>
-                <span className="text-sm text-blue-600">{item.currentPrice}</span>
+                <span className="text-sm text-[#8B9DC3]">{item.currentPrice}</span>
               </div>
               <div className="text-xs text-muted-foreground mt-1">
                 Owner: {item.originalWinner}
@@ -274,7 +274,7 @@ export function Explore() {
         )}
         {item.type === "resale" && (
           <Button 
-            className="w-full bg-blue-600 hover:bg-blue-600/90 text-sm py-4"
+            className="w-full bg-[#8B9DC3] hover:bg-[#8B9DC3]/90 text-sm py-4"
           >
             Buy Now
           </Button>
@@ -288,7 +288,7 @@ export function Explore() {
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl mb-6 text-[#8B4A4A]">Explore</h1>
+          <h1 className="text-4xl md:text-5xl mb-6 text-[rgba(223,194,138,1)]">Explore</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Discover all artists, auctions, and patronage opportunities across our platform
           </p>
